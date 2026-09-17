@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscrição | Sistema de Eventos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo-area">
+        <h1>Universidade Futuro</h1>
+        <p>Portal Oficial de Eventos Acadêmicos</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="programacao.html">Programação</a></li>
+          <li><a href="inscricao.html" class="active">Inscrição</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="conteudo-inscricao">
+      <h2 class="section-title">Inscrição em Eventos</h2>
+
+      <div class="form-container">
+        <form action="#" method="get">
+          
+          <div class="form-group">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" class="campo-texto" placeholder="Digite seu nome completo" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail Acadêmico:</label>
+            <input type="email" id="email" name="email" class="campo-texto" placeholder="seuemail@universidade.edu.br" required>
+          </div>
+
+          <div class="form-group">
+            <label for="curso">Curso:</label>
+            <input type="text" id="curso" name="curso" class="campo-texto" placeholder="Ex: Ciência da Computação" required>
+          </div>
+
+          <div class="form-group">
+            <label for="periodo">Período:</label>
+            <select id="periodo" name="periodo" class="campo-select" required>
+              <option value="" disabled selected>Selecione seu período</option>
+              <option value="1">1º Período</option>
+              <option value="2">2º Período</option>
+              <option value="3">3º Período</option>
+              <option value="4">4º Período</option>
+              <option value="5">5º Período ou superior</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="evento">Evento Desejado:</label>
+            <select id="evento" name="evento" class="campo-select" required>
+              <option value="" disabled selected>Selecione um evento</option>
+              <option value="ia">Inteligência Artificial na Educação</option>
+              <option value="web">Desenvolvimento Web com HTML & CSS</option>
+              <option value="carreira">Gestão do Tempo e Carreiras Tech</option>
+              <option value="robotica">Introdução à Robótica e Arduino</option>
+              <option value="empreendedorismo">Empreendedorismo Acadêmico</option>
+              <option value="seguranca">Segurança da Informação e Privacidade</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Modalidade:</label>
+            <div class="radio-group">
+              <label><input type="radio" name="modalidade" value="presencial" checked required> Presencial</label>
+              <label><input type="radio" name="modalidade" value="online" required> Online</label>
+            </div>
+          </div>
+
+          <div class="form-group checkbox-group">
+            <label><input type="checkbox" id="confirmacao" name="confirmacao" required> Confirmo que as informações fornecidas são verdadeiras.</label>
+          </div>
+
+          <button type="submit" class="btn-submit">Realizar Inscrição</button>
+
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <div class="rodape">
+    <p>2026 Universidade Futuro - Todos os direitos reservados.</p>
+  </div>
+
+</body>
+</html>
